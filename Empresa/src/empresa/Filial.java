@@ -55,5 +55,13 @@ public class Filial {
     public void setManager(Manager manager) {
         this.manager = manager;
     }
-    
+    public void ywla(){
+        if(this.grade<5 && this.manager.getYw()>=5){
+            this.grade+=1;
+            if(this.grade>5){
+                this.grade=5;
+            }
+        }
+        
+    }
 }
